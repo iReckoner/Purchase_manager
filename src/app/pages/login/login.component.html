@@ -3,6 +3,7 @@
   <!-- 🔹 Video Background -->
   <video #bgVideo [muted]="true" autoplay playsinline preload="auto"
     (ended)="showForm = true"
+    (error)="showForm = true"
     class="absolute top-0 left-0 w-full h-full object-fill z-0">
     <source src="assets/superman-bg.mp4" type="video/mp4" />
   </video>
