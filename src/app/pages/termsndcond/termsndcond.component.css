@@ -1,0 +1,8 @@
+/* .docx-content p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+} */
+pdf-viewer ::ng-deep .page {
+  margin-bottom: 16px; /* space between pages */
+}

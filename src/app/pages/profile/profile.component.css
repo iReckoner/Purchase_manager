@@ -1,0 +1,45 @@
+.pdf-horizontal-container {
+  display: flex;
+  overflow-x: auto;      /* horizontal scroll */
+  overflow-y: hidden;    /* hide vertical scroll */
+  background-color: #bfbfbf; /* grey page break background */
+  height: 100vh;         /* fit full viewport height */
+  padding: 20px 0;
+}
+
+.pdf-horizontal ::ng-deep .page {
+  flex: 0 0 auto;        /* prevent shrinking */
+  margin: 0 20px;        /* horizontal spacing = page break */
+  background: white;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.35);
+}
+.pdf-wrapper {
+  background-color: #325b99; /* grey background for page breaks */
+  padding: 16px 0;
+  overflow-y: auto; /* vertical scroll */
+}
+
+.pdf-wrapper ::ng-deep .page {
+  display: block;
+  margin: 16px auto;          /* spacing between pages */
+  background: white;
+  box-shadow: 0 0 6px rgba(0,0,0,0.15);
+  border-top: 2px solid #9ca3af;  /* grey line at top of each page */
+  border-bottom: 2px solid #9ca3af; /* grey line at bottom */
+}
+.pdf-container {
+  background-color: #c5cad1; /* dark grey background */
+  padding: 16px 0;
+  overflow-y: auto; /* vertical scroll */
+}
+
+/* Force each PDF page to be block-level and add spacing for page breaks */
+.pdf-container ::ng-deep .page {
+  display: flex !important;          /* ensures page wrapper shows borders */
+  flex-direction: column;
+  margin: 16px auto !important;      /* vertical spacing = page break */
+  background: white !important;      /* page color */
+  /* border-top: 1px solid #1f2937 !important;   
+  border-bottom: 1px solid #1f2937 !important; */
+  box-shadow: 0 0 6px rgba(0,0,0,0.15) !important;
+}
