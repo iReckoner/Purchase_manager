@@ -13,6 +13,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { TermsndcondComponent } from './pages/termsndcond/termsndcond.component';
 import { LoginGuard } from './Login-guard';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import { AttendanceComponent } from './pages/attendance/attendance.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent , canActivate: [LoginGuard]   },
@@ -29,7 +30,8 @@ const routes: Routes = [
       { path: 'home', redirectTo: 'superchamp', pathMatch: 'full' },
       { path: 'profile', component: ProfileComponent },
       { path: 'termsndcond', component: TermsndcondComponent },
-      {path:'contactus',component:ContactUsComponent}
+      { path: 'contactus', component: ContactUsComponent },
+      { path: 'attendance', component: AttendanceComponent }
     ]
   },
 

@@ -24,6 +24,8 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { AuthInterceptor } from './interceptors/auth.interceptor';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { PopupserviceComponent } from './pages/popupservice/popupservice.component';
+import { AttendanceComponent } from './pages/attendance/attendance.component';
+import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
 
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { ToastrModule } from 'ngx-toastr';
@@ -45,7 +47,8 @@ import { PopupserviceComponent } from './pages/popupservice/popupservice.compone
     ProfileComponent,
     TermsndcondComponent,
     ContactUsComponent,
-    PopupserviceComponent
+    PopupserviceComponent,
+    AttendanceComponent
 
   ],
   imports: [
@@ -57,6 +60,7 @@ import { PopupserviceComponent } from './pages/popupservice/popupservice.compone
     FormsModule,
     RouterModule,
     CommonModule,
+    CalendarModule
     // Swiper modules are now registered globally
     // Add SwiperModule to imports array
     // SwiperModule
