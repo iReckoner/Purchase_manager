@@ -1,0 +1,8 @@
+.custom-calendar {
+  width: 100%;
+}
+
+.custom-calendar .e-calendar {
+  width: 100% !important;
+  max-width: none !important;
+}
